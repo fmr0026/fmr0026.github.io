@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FrontEnd Dev</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     
 </head>
 <body>
@@ -15,29 +16,48 @@
             <img src="images/IMG_2562.JPG" alt="Me" class="headshot">
             <nav>
                 <a href="#" class="hide-desktop">
-                    <img src="ham.svg" alt="toggle menu" class="menu" id="menu">
+                    <img src="images/iconfinder_menu-alt_134216.svg" alt="toggle menu" class="menu" id="menu">
                 </a>
-                <ul class="show-desktop hide-desktop" id="nav">
+                <ul class="show-desktop hide-mobile" id="nav">
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Education</a></li>
                     <li><a href="#">Resume</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
+
+        <section>
+            <h1>Education</h1>
+        </section>
         <section>
             <h1>Resume</h1>
-            
         </section>
+        <section>
+            <h1>Contact</h1>
+        </section>
+
     </div>
 
     <footer>
         <div class="footer-container">
-            <div class="cont">
-
+            <div class="container">
+                <ul class="footer-links">
+                </ul>
             </div>
         </div>
     </footer>
 
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
     
 </body>
 </html>

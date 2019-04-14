@@ -1,0 +1,122 @@
+$mycolor: purple;
+$colors: (
+    primary: gray,
+    primary-light: lighten(gray, 40%),
+    primary-dark: darken(gray, 40%),
+    accent: white
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: color(primary);
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+.headshot {
+    transform: rotate(90deg);
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    margin: .8em .8em;
+    border-radius: 50%;
+}
+
+.menu {
+    margin: 55px;
+    margin-top: 45%;
+    z-index: 7;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    position: fixed;
+    width: 20%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: pink;
+    height: 100%;
+    padding-top: 3em;
+    z-index: 5;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+    background-color: red;
+}
+
+nav ul li a:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    .headshot{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .container{ 
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        height: auto;
+        background: none;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: black;
+        background: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+
+}

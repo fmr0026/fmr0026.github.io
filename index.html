@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FrontEnd Dev</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Portfolio</title>
 </head>
-<body>
-    <div class="container">
-        <header>
 
-            <img src="images/IMG_2562.JPG" alt="Me" class="headshot">
-            <nav>
-                <a href="#" class="hide-desktop">
-                    <img src="images/iconfinder_menu-alt_134216.svg" alt="toggle menu" class="menu" id="menu">
-                </a>
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<body class="container">
+  <header>
+    <img src="images/menu.svg" alt="Menu" id="menu" />
+  </header>
 
-        <section>
-            <h1>Education</h1>
-        </section>
-        <section>
-            <h1>Resume</h1>
-        </section>
-        <section>
-            <h1>Contact</h1>
-        </section>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    </div>
+  <main>
+    <section class="main-section">
+      <h1>
+        Hello, my name is Francisco<br />
+        and I like to build things.
+      </h1>
+      <p>Front-End Web Developer</p>
+      <br><br><br><br><br><br><br>
+    </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-                <ul class="footer-links">
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <section class="about-section" id="about">
+      <h1>About Me</h1>
+      <p>I am front-end web developer based in Dallas, Texas.</p>
+    </section>
 
-    <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('nav');
+    <section class="project-section" id="projects">
+      <h1>Projects</h1>
+      <p></p>
 
-        menu.addEventListener('click', function(e){
-            nav.classList.toggle('hide-mobile');
-            e.preventDefault();
-        });
+    </section>
 
-    </script>
-    
+    <section class="resume-section">
+      <h1>Resume</h1>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h1>Contact</h1>
+      <p>Please feel free to contact me anytime.</p>
+
+      <form action="/my-handling-form-page" method="post">
+          <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </div>
+
+          <div>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email">
+            </div>
+
+          <div>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+         
+          <div class="button">
+              <button type="submit">Send your message</button>
+            </div>
+      </form>
+
+    </section>
+  </main>
+
+  <aside></aside>
+
+  <footer>
+    <p>Francisco Rodriguez</p>
+  </footer>
+
+  <script>
+    (function () {
+      var menu = document.querySelector("ul");
+      var menuLink = document.getElementById("menu");
+
+      menuLink.addEventListener("click", function (e) {
+        menu.classList.toggle("active");
+        e.preventDefault();
+      });
+    })();
+  </script>
 </body>
+
 </html>

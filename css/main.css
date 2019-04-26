@@ -51,6 +51,10 @@ nav {
   grid-area: nav;
   margin-left: 0;
   background: #05408f;
+  position: fixed;
+  height: 100%;
+  text-align: center;
+  padding: .2em;
 }
 
 main {
@@ -197,9 +201,10 @@ button {
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
+    position: relative;
   }
   ul {
-    display: block;
+    float: none;
     text-align: center;
     width: 100%;
   }

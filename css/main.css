@@ -208,5 +208,8 @@ button {
     text-align: center;
     width: 100%;
   }
+  .icons {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

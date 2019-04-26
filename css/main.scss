@@ -206,12 +206,15 @@ button {
     position: relative;
   }
 
-
   ul {
     //display: block;
     float: none;
     text-align: center;
     width: 100%;
+  }
+
+  .icons {
+    display: none;
   }
 
 }

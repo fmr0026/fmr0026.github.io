@@ -19,7 +19,7 @@ html {
 
 h1 {
   margin: 0;
-  padding: 1em;
+  padding: 3em;
 }
 
 p {
@@ -54,7 +54,7 @@ nav {
   position: fixed;
   height: 100%;
   text-align: center;
-  padding: .2em;
+  padding-right: .4em;
 }
 
 main {
@@ -108,10 +108,14 @@ a {
 .about-section {
   text-align: center;
   color: black;
+  padding: 2em;
+  background: dodgerblue;
 }
 
 .project-section {
   color: black;
+  padding: 2em;
+  background: lightskyblue;
 }
 
 .project-section p a {
@@ -120,10 +124,18 @@ a {
 
 .resume-section {
   color: black;
+  padding: 2em;
+}
+
+nav ul li:nth-child(4) {
+  border: 1px solid white;
+  background: #0076f3;
 }
 
 .contact-section {
   color: black;
+  padding: 2em;
+  background: lightblue;
 }
 
 #menu {

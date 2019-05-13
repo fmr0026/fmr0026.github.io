@@ -91,13 +91,19 @@ a {
   color: white;
 }
 
+.icons {
+  cursor: pointer;
+}
+
 .main-section {
   font-size: 2.5em;
   text-align: right;
   background-image: url(../images/nasa-splash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   max-width: 100%;
+  height: 100vh;
 }
 
 .main-section p {
@@ -147,12 +153,21 @@ ul li a:hover {
   background-color: #095bf3;
 }
 
+.icons a:hover {
+  background-color: #05408f;
+}
+
+.icons li a {
+  cursor: pointer;
+}
+
 form {
   margin: 0 auto;
   width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
+  background-color: whitesmoke;
 }
 
 div + div {
@@ -193,7 +208,7 @@ button {
   margin-left: .5em;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
         grid-template-areas: "header" "nav" "content" "side" "footer";
     -ms-grid-columns: 1fr;
@@ -201,6 +216,11 @@ button {
     -ms-grid-rows: auto minmax(235px, auto) 1fr minmax(75px, auto) auto;
         grid-template-rows: auto minmax(235px, auto) 1fr minmax(75px, auto) auto;
     /* Footer */
+    height: 50vh;
+  }
+  h1 {
+    padding: .5em;
+    font-size: 100%;
   }
   #menu {
     width: 40px;

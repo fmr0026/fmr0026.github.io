@@ -109,6 +109,11 @@ a {
   color: black;
   padding: 2em;
   background: dodgerblue;
+  
+  h1, p {
+    color: white;
+  }
+
 }
 
 .project-section {
@@ -200,6 +205,12 @@ textarea {
 button {
   margin-left: .5em;
 } 
+
+@media only screen and (max-width:1440px) {
+  h1 {
+    padding: 1em;
+  }
+}
 
 
 // for mobile devices 

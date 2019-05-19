@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Portfolio</title>
 </head>
 
@@ -55,6 +56,21 @@
       </button>
       <button onclick="window.open('https://github.com/fmr0026/Parking-Lot-API','_blank');" type="button"> See Code
       </button>
+
+      <h5>Meeting App</h5>
+      <button onclick="window.open('https://my-app-64e2d.firebaseapp.com/','_blank');"
+        type="button">Live Demo
+      </button>
+      <button onclick="window.open('https://github.com/fmr0026/Meeting-App','_blank');" type="button"> See Code
+      </button>
+
+      <h5>Meeting App</h5>
+      <button onclick="window.open('https://my-app-64e2d.firebaseapp.com/','_blank');"
+        type="button">Live Demo
+      </button>
+      <button onclick="window.open('https://github.com/fmr0026/Pet-Appointment-App','_blank');" type="button"> See Code
+      </button>
+
     </section>
     <!-- 
       <section class="resume-section">
@@ -64,10 +80,11 @@
 
     <section class="contact-section" id="contact">
       <h1>Contact</h1>
-      <p>Please feel free to contact me anytime. Send me an email at franciscorodriguez2a@yahoo.com</p>
+      <p>Please feel free to contact me anytime. Send me an email.</p>
 
       <!-- <form action="/my-handling-form-page" method="post"> -->
-      <form action="mailto:franciscorodriguez2a@yahoo.com" method="GET" enctype="application/x-www-form-urlencoded">
+      <!-- <form action="mailto:franciscorodriguez2a@yahoo.com" method="GET" enctype="application/x-www-form-urlencoded">
+        
         <div>
               <label for="name">Name:</label>
               <input type="text" id="name" name="user_name">
@@ -86,6 +103,20 @@
           <div class="button">
               <button type="submit">Send</button>
             </div>
+      </form> -->
+
+      <form method="POST" action="https://formspree.io/franciscorodriguez2a@yahoo.com">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Enter Your email">
+        </div>
+        <div>
+          <label for="msg">Message:</label>
+          <textarea name="message" placeholder="Enter Your Message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Send</button>
+        </div>
       </form>
 
     </section>

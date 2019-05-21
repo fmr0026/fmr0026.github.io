@@ -12,7 +12,6 @@
 
 <body class="container">
   <header>
-    <img src="images/menu.svg" alt="Menu" id="menu" />
   </header>
 
   <nav>
@@ -24,12 +23,12 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <ul class="icons">
+    <!-- <ul class="icons">
       <li><a href="https://github.com/fmr0026"><img src="images/github-logo.png" alt="github" style="width: 60px"></a>
       </li>
       <li><a href="https://www.linkedin.com/in/francisco-rodriguez/"><img src="images/linkedin-logo.png" alt="linkedin"
             style="width: 40px"></a></li>
-    </ul>
+    </ul> -->
   </nav>
 
   <main>
@@ -44,32 +43,38 @@
 
     <section class="about-section" id="about">
       <h1>About Me</h1>
+      <hr />
       <p>I am front-end web developer based in Dallas, Texas. I received my Bachelor's degree in Computer Science from
-        the University of North Texas.</p>
+        the University of North Texas. On my freetime I love playing my guitar, listening to music, or playing video
+        games. </p>
     </section>
 
     <section class="project-section" id="projects">
       <h1>Projects</h1>
-      <h5>Parking Lot API</h5>
-      <button onclick="window.open('http://s3.us-east-2.amazonaws.com/franciscor/Rodriguez/index.html','_blank');"
-        type="button">Live Demo
-      </button>
-      <button onclick="window.open('https://github.com/fmr0026/Parking-Lot-API','_blank');" type="button"> See Code
-      </button>
-
-      <h5>Meeting App</h5>
-      <button onclick="window.open('https://my-app-64e2d.firebaseapp.com/','_blank');"
-        type="button">Live Demo
-      </button>
-      <button onclick="window.open('https://github.com/fmr0026/Meeting-App','_blank');" type="button"> See Code
-      </button>
-
-      <h5>Meeting App</h5>
-      <button onclick="window.open('https://my-app-64e2d.firebaseapp.com/','_blank');"
-        type="button">Live Demo
-      </button>
-      <button onclick="window.open('https://github.com/fmr0026/Pet-Appointment-App','_blank');" type="button"> See Code
-      </button>
+      <hr />
+      <div class="item">
+        <h5>Parking Lot API</h5>
+        <button onclick="window.open('http://s3.us-east-2.amazonaws.com/franciscor/Rodriguez/index.html','_blank');"
+          type="button">Live Demo
+        </button>
+        <button onclick="window.open('https://github.com/fmr0026/Parking-Lot-API','_blank');" type="button"> See Code
+        </button>
+      </div>
+      <div class="item">
+        <h5>Meeting App</h5>
+        <button onclick="window.open('https://my-app-64e2d.firebaseapp.com/','_blank');" type="button">Live Demo
+        </button>
+        <button onclick="window.open('https://github.com/fmr0026/Meeting-App','_blank');" type="button"> See Code
+        </button>
+      </div>
+      <div class="item">
+        <h5>Vet Appointment App</h5>
+        <button onclick="window.open('https://pet-app-8d202.firebaseapp.com/','_blank');" type="button">Live Demo
+        </button>
+        <button onclick="window.open('https://github.com/fmr0026/Vet-Appointment-App','_blank');" type="button"> See
+          Code
+        </button>
+      </div>
 
     </section>
     <!-- 
@@ -80,35 +85,13 @@
 
     <section class="contact-section" id="contact">
       <h1>Contact</h1>
+      <hr />
       <p>Please feel free to contact me anytime. Send me an email.</p>
-
-      <!-- <form action="/my-handling-form-page" method="post"> -->
-      <!-- <form action="mailto:franciscorodriguez2a@yahoo.com" method="GET" enctype="application/x-www-form-urlencoded">
-        
-        <div>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name">
-            </div>
-
-          <div>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="mail" name="user_email">
-            </div>
-
-          <div>
-              <label for="msg">Message:</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </div>
-         
-          <div class="button">
-              <button type="submit">Send</button>
-            </div>
-      </form> -->
 
       <form method="POST" action="https://formspree.io/franciscorodriguez2a@yahoo.com">
         <div>
           <label for="email">Email:</label>
-          <input type="email" name="email" placeholder="Enter Your email">
+          <input type="email" name="email" placeholder="Enter Your Email">
         </div>
         <div>
           <label for="msg">Message:</label>
@@ -125,19 +108,27 @@
   <aside></aside>
 
   <footer>
-    <p>Francisco Rodriguez</p>
+    <h2>Keep In Touch</h2>
+    <a href="https://github.com/fmr0026"><img src="images/github-logo.png" alt="github" style="width: 63px; 
+    position: relative; top: 11px; left: 11px"></a>
+    <a href="https://www.linkedin.com/in/francisco-rodriguez/"><img src="images/linkedin-logo.png" alt="linkedin"
+        style="width: 40px"></a>
+    <a href="http://www.facebook.com/francisco.rodriguez.31392"><img src="images/facebook-logo.png" alt="facebook-logo"
+        style="width: 40px"></a>
+    <a href="https://twitter.com/cowboyfanklko" target="_blank"><img src="images/twitter-logo.png" alt="twitter-logo"
+        style="width: 40px"></a>
+    <p> Copyright &copy; 2019 Francisco Rodriguez</p>
   </footer>
 
   <script>
-    (function () {
-      var menu = document.querySelector("ul");
-      var menuLink = document.getElementById("menu");
-
-      menuLink.addEventListener("click", function (e) {
-        menu.classList.toggle("active");
-        e.preventDefault();
-      });
-    })();
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
   </script>
 </body>
 

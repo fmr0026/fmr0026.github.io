@@ -5,6 +5,12 @@ html {
   margin: 0;
   font-family: "Montserrat";
 }*/
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -24,6 +30,15 @@ h1 {
 
 p {
   margin: 1em;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #fff;
+  margin: 1em auto;
+  width: 33%;
 }
 
 header {
@@ -71,8 +86,14 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: footer;
-  background: black;
+  background: #484848;
   color: white;
+  text-align: center;
+}
+
+footer a {
+  display: inline;
+  padding: .3em;
 }
 
 ul {
@@ -113,19 +134,35 @@ a {
 
 .about-section {
   text-align: center;
-  color: black;
+  color: white;
   padding: 0.1em 2em;
   background: dodgerblue;
 }
 
-.about-section h1, .about-section p {
-  color: white;
+.about-section h1 {
+  padding: 1em 1em 0 1em;
 }
 
 .project-section {
   color: black;
-  padding: 2em;
+  padding: 0em 2em 1em 2em;
   background: lightskyblue;
+}
+
+.project-section h1 {
+  padding: 1em 1em 0 1em;
+}
+
+.project-section p {
+  padding-bottom: 0;
+}
+
+.project-section hr {
+  border-color: black;
+}
+
+.project-section .item {
+  display: inline-block;
 }
 
 .project-section p a {
@@ -134,18 +171,43 @@ a {
 
 .resume-section {
   color: black;
-  padding: 2em;
+  padding: 0.1em 2em;
+}
+
+.resume-section h1 {
+  padding: 1em 1em 0 1em;
+}
+
+.resume-section p {
+  padding-bottom: 0;
+}
+
+.resume-section hr {
+  border-color: black;
 }
 
 nav ul li:nth-child(4) {
   border: 1px solid white;
   background: #0076f3;
+  border-radius: 3px;
 }
 
 .contact-section {
   color: black;
-  padding: 2em;
+  padding: 0em 2em 1em 2em;
   background: lightblue;
+}
+
+.contact-section h1 {
+  padding: 1em 1em 0 1em;
+}
+
+.contact-section p {
+  padding-bottom: 0;
+}
+
+.contact-section hr {
+  border-color: black;
 }
 
 #menu {
@@ -159,10 +221,6 @@ ul li a:hover {
 
 .icons a:hover {
   background-color: #05408f;
-}
-
-.icons li a {
-  cursor: pointer;
 }
 
 form {
@@ -224,6 +282,10 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background: #51a9ff;
+}
+
 @media only screen and (max-width: 1440px) {
   h1 {
     padding: 1em;
@@ -232,11 +294,11 @@ button {
 
 @media only screen and (max-width: 768px) {
   .container {
-        grid-template-areas: "header" "nav" "content" "side" "footer";
+        grid-template-areas: "header" "nav" "content" "footer";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: auto minmax(235px, auto) 1fr minmax(75px, auto) auto;
-        grid-template-rows: auto minmax(235px, auto) 1fr minmax(75px, auto) auto;
+    -ms-grid-rows: auto minmax(235px, auto) 1fr auto;
+        grid-template-rows: auto minmax(235px, auto) 1fr auto;
     /* Footer */
     height: 50vh;
   }
@@ -258,6 +320,7 @@ button {
     position: relative;
   }
   ul {
+    display: block;
     float: none;
     text-align: center;
     width: 100%;

@@ -58,7 +58,7 @@ header {
 nav {
   grid-area: nav;
   margin-left: 0;
-  background: rgb(5, 64, 143);
+  background:#0074a8; // rgb(5, 64, 143);
   position: fixed;
   height: 100%;
   text-align: center;
@@ -69,6 +69,30 @@ main {
   grid-area: content;
   color: white;
   text-align: center;
+}
+
+.cta {
+  display: block;
+  text-align: center;
+  position: relative;
+  right: 140px;
+  top: 125px;
+
+  a {
+    display: inline-block;
+    padding: 0;
+  }
+  
+  button {
+    border-radius: 50px;
+    background: #0074a8;
+    border: 4px solid white;
+  }
+  
+  button:hover {
+    background: darken($color: #0074a8, $amount: 20)
+  }
+
 }
 
 footer {
@@ -121,12 +145,16 @@ a {
 
 .about-section {
   text-align: center;
-  color: white;
+  color: black;
   padding: 0.1em 2em;
-  background: dodgerblue;
+  background: whitesmoke;
   
   h1 {
     padding: 1em 1em 0 1em;
+  }
+
+  hr {
+    border-color: black;
   }
 
 }
@@ -134,7 +162,7 @@ a {
 .project-section {
   color: black;
   padding: 0em 2em 1em 2em;
-  background: lightskyblue;
+  background: #ecf1f5;
 
   h1 {
     padding: 1em 1em 0 1em;
@@ -280,15 +308,15 @@ a {
 }
 
 nav ul li:nth-child(4) {
-  border: 1px solid white;
-  background: #0076f3;
+  border: 3px solid white;
+  background: #0074a8;// #0076f3;
   border-radius: 3px;
 }
 
 .contact-section {
-  color: black;
+  color: white;
   padding: 0em 2em 1em 2em;
-  background: lightblue; //lightcyan
+  background: #999;
   
   h1  {
     padding: 1em 1em 0 1em;
@@ -299,7 +327,7 @@ nav ul li:nth-child(4) {
   }
 
   hr {
-    border-color: black;
+    border-color: white;
   }
 }
 
@@ -309,11 +337,11 @@ nav ul li:nth-child(4) {
 }
 
 ul li a:hover{
-  background-color: rgb(9, 91, 243)
+  background-color: darken($color: #0074a8, $amount: 15)// rgb(9, 91, 243)
 }
 
 .icons a:hover {
-  background-color: rgb(5, 64, 143);
+  background-color: darken($color: #0074a8, $amount: 15)// rgb(5, 64, 143);
 }
 
 //form
@@ -321,9 +349,10 @@ form {
   margin: 0 auto;
   width: 400px;
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 6px solid white;
   border-radius: 1em;
-  background-color: whitesmoke;
+  background-color: #0074a8;
+  color: white;
 }
 
 div + div {
@@ -367,16 +396,16 @@ textarea {
 
 button {
   margin-left: .5em;
-  background: dodgerblue;
+  background: #0074a8;// dodgerblue;
   padding: 0.9em;
   color: white;
-  border: 1px solid black;
+  border: 3px solid white;
   font-size: 16px;
   border-radius: 5px;
 } 
 
 button:hover {
-  background: lighten($color: dodgerblue, $amount: 10)
+  background: lighten($color: #0074a8, $amount: 10)
 }
 
 @media only screen and (max-width:1440px) {

@@ -19,7 +19,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="./RESUME.pdf" target="_blank">Resume</a></li>
+      <li><a href="./CS_RESUME.pdf" target="_blank">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -39,12 +39,19 @@
       </h1>
       <p>Front-End/Web Developer</p>
 
+      <div class="cta">
+        <a href="#contact">
+          <button>CONTACT ME</button>
+        </a>
+      </div>
+
     </section>
 
     <section class="about-section" id="about">
       <h1>About Me</h1>
       <hr />
-      <p>I am front-end web developer based in Dallas, Texas. I received my Bachelor's degree in Computer Science from
+      <p>My name is Francisco Rodriguez and I am front-end web developer based in Dallas, Texas. I received my
+        Bachelor's degree in Computer Science from
         the University of North Texas. On my freetime I love playing my guitar, listening to music, or playing video
         games. </p>
     </section>
@@ -55,7 +62,7 @@
 
       <ul id="rig">
         <li>
-          <a class="rig-cell" href="#">
+          <a class="rig-cell" href="#projects">
             <img class="rig-img" src="images/Parking-Lot-API.PNG">
             <span class="rig-overlay"></span>
             <span class="rig-text">Parking Lot API
@@ -72,7 +79,7 @@
           </a>
         </li>
         <li>
-          <a class="rig-cell" href="#">
+          <a class="rig-cell" href="#projects">
             <img class="rig-img" src="images/Meeting-App.PNG">
             <span class="rig-overlay"></span>
             <span class="rig-text">Meeting App
@@ -87,7 +94,7 @@
           </a>
         </li>
         <li>
-          <a class="rig-cell" href="#">
+          <a class="rig-cell" href="#projects">
             <img class="rig-img" src="images/Vet-Appointment-App.PNG">
             <span class="rig-overlay"></span>
             <span class="rig-text">Vet Appointment App
@@ -104,62 +111,6 @@
           </a>
         </li>
       </ul>
-
-      <!-- <div class="container">
-        <div class="mySlides">
-          <div class="numbertext">1/3</div>
-          <img src="images/Parking-Lot-API.PNG" alt="Parking-Lot-API" style="width: 100%">
-          <button onclick="window.open('http://s3.us-east-2.amazonaws.com/franciscor/Rodriguez/index.html','_blank');"
-            type="button">Live Demo
-          </button>
-          <button onclick="window.open('https://github.com/fmr0026/Parking-Lot-API','_blank');" type="button"> See
-            Code
-          </button>
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2/3</div>
-          <img src="images/Meeting-App.PNG" alt="Meeting-App" style="width: 100%">
-          <button onclick="window.open('https://my-app-64e2d.firebaseapp.com/','_blank');" type="button">Live Demo
-          </button>
-          <button onclick="window.open('https://github.com/fmr0026/Meeting-App','_blank');" type="button"> See Code
-          </button>
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3/3</div>
-          <img src="images/Vet-Appointment-App.PNG" alt="Vet-Appointment-App" style="width: 100%">
-          <button onclick="window.open('https://pet-app-8d202.firebaseapp.com/','_blank');" type="button">Live Demo
-          </button>
-          <button onclick="window.open('https://github.com/fmr0026/Vet-Appointment-App','_blank');" type="button"> See
-            Code
-          </button>
-
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="images/Parking-Lot-API.PNG" style="width:100%" onclick="currentSlide(1)"
-              alt="Parking Lot API">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/Meeting-App.PNG" style="width:100%" onclick="currentSlide(2)"
-              alt="Meeting App">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/Vet-Appointment-App.PNG" style="width:100%" onclick="currentSlide(3)"
-              alt="Vet Appointment App">
-          </div>
-        </div>
-
-      </div> -->
 
     </section>
 
@@ -207,34 +158,7 @@
   </footer>
 
   <script>
-    // var slideIndex = 1;
-    // showSlides(slideIndex);
 
-    // function plusSlides(n) {
-    //   showSlides(slideIndex += n);
-    // }
-
-    // function currentSlide(n) {
-    //   showSlides(slideIndex = n);
-    // }
-
-    // function showSlides(n) {
-    //   var i;
-    //   var slides = document.getElementsByClassName("mySlides");
-    //   var dots = document.getElementsByClassName("demo");
-    //   var captionText = document.getElementById("caption");
-    //   if (n > slides.length) { slideIndex = 1 }
-    //   if (n < 1) { slideIndex = slides.length }
-    //   for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.display = "none";
-    //   }
-    //   for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" active", "");
-    //   }
-    //   slides[slideIndex - 1].style.display = "block";
-    //   dots[slideIndex - 1].className += " active";
-    //   captionText.innerHTML = dots[slideIndex - 1].alt;
-    // }
   </script>
 </body>
 
